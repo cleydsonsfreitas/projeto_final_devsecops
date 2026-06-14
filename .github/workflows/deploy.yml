@@ -32,3 +32,13 @@ jobs:
     - name: Execute Application Environment Check
       run: |
         python -m compileall .
+
+    - name: Run SAST Security Scan (Bandit)
+      run: |
+        pip install bandit
+        bandit -r . -v
+
+    - name: Run SCA Dependency Scan (Safety)
+      run: |
+        pip install safety
+        safety check
