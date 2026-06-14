@@ -52,4 +52,4 @@ typer==0.25.1
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 Werkzeug==3.1.8
-WTForms==2.2.1
+WTForms==3.1.2
